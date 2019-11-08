@@ -8,7 +8,6 @@ RUN set -ex \
 COPY ./amd64/registry /bin/registry
 COPY ./amd64/rconfig-example.yml /etc/docker/registry/config.yml
 
-VOLUME ["/var/lib/registry"]
 EXPOSE 5000
 
 COPY ./amd64/rdocker-entrypoint.sh /entrypoint.sh
